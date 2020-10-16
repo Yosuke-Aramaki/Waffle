@@ -16,7 +16,7 @@ describe('E2E: Compile with types', () => {
   });
 
   after(() => {
-    removeSync('build');
+    // removeSync('build');
     process.chdir('../../..');
   });
 });
