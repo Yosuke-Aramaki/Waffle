@@ -37,17 +37,19 @@
   "dependencies": {
     "@resolver-engine/imports": "^0.3.3",
     "@resolver-engine/imports-fs": "^0.3.3",
+    "@typechain/ethers-v5": "^2.0.0",
     "@types/mkdirp": "^0.5.2",
     "@types/node-fetch": "^2.5.5",
     "ethers": "^5.0.1",
     "mkdirp": "^0.5.1",
     "node-fetch": "^2.6.0",
-    "solc": "^0.6.3"
+    "solc": "^0.6.3",
+    "typechain": "^3.0.0"
   },
   "devDependencies": {
-    "@openzeppelin/contracts": "^3.0.1",
     "@ethereum-waffle/chai": "^3.1.1",
     "@ethereum-waffle/provider": "^3.1.1",
+    "@openzeppelin/contracts": "^3.0.1",
     "@types/chai": "^4.2.3",
     "@types/chai-as-promised": "^7.1.2",
     "@types/chai-string": "^1.4.2",
