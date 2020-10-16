@@ -44,6 +44,7 @@
     "mkdirp": "^0.5.1",
     "node-fetch": "^2.6.0",
     "solc": "^0.6.3",
+    "ts-generator": "^0.1.1",
     "typechain": "^3.0.0"
   },
   "devDependencies": {
