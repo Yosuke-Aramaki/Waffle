@@ -39,6 +39,8 @@ export interface Config {
   /** Options which control contract types generation with Typechain */
   typechainOptions: {
     enabled: boolean;
+    /** relative to outputDirectory */
+    outputDir?: string;
   };
 }
 
