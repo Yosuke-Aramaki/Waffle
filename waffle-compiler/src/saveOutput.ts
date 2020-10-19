@@ -5,7 +5,7 @@ import {getHumanReadableAbi} from './getHumanReadableAbi';
 import mkdirp from 'mkdirp';
 
 export interface BytecodeJson {
-  linkReferences: object;
+  linkReferences: Record<string, unknown>;
   object: string;
   opcodes: string;
   sourceMap: string;
@@ -21,7 +21,7 @@ export interface ContractJson {
   srcmap?: string;
   bin?: string;
   'bin-runtime'?: string;
-  abi: object[];
+  abi: Record<string, unknown>[];
   bytecode?: string;
   humanReadableAbi?: string[];
   evm: EvmJson;

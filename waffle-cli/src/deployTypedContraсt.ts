@@ -14,5 +14,6 @@ export async function deployTypedContract<T extends ContractFactory>(
     ...defaultDeployOptions,
     ...overrideOptions
   });
-  return contract.deployed();
+  await contract.deployed();
+  return contract;
 }

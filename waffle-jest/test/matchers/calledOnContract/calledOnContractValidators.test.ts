@@ -19,9 +19,7 @@ async function setup() {
 describe('INTEGRATION: ethCalledValidators', () => {
   it('throws type error when the argument is not a contract', async () => {
     expect(
-      // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-      // @ts-ignore
-      () => expect('calledFunction').toBeCalledOnContract('invalidContract')
+      () => expect('calledFunction').toBeCalledOnContract('invalidContract' as unknown as Contract)
     ).toThrowError('argument must be a contract');
   });
 
